@@ -1,0 +1,65 @@
+$(function(){
+	nav.init();
+});
+nav={
+	init:function(){
+		$('#header .search').click(function(){
+			$("#header").hide();
+			$('#search').show();
+			$('[name="kw"]').focus();
+		});
+		$('#search .x').click(function(){
+			$("#header").show();
+			$('#search').hide();
+			$('[name="kw"]').val("");
+		});
+		$('[name="kw"]').keyup(function(){
+			$.get('../php/search.php',{kw:$('[name="kw"]').val()},function(data){
+				$('#link').html(data);
+			});
+		});
+		$('[name="login"]').click(function(){
+			$.post('../php/dl.php',{uname:$('[name="uname"]').val(),pwd:$('[name="pwd"]').val()},function(data){
+				if(data.status<0){
+					alert("用户名或密码错误");
+				}else{
+					location.href="me.html";
+				}
+			});
+		});
+		/*$('#link>ul>li').click(function(){
+				$('[name="kw"]').val($(this).html());
+				console.log($(this).html());
+		});*/
+		$("#link>ul").on("click","li", function() {
+				$('[name="kw"]').val($(this).html());
+				console.log($(this).html());
+		});
+		//原生js方法
+		/*$('[name="kw"]').keyup(function(){
+			var xhr=new XMLHttpRequest();
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState===4){
+					if(xhr.status===200){
+						$('#link').html(xhr.responseText);
+					}else{
+						console.log("错误");
+					}
+				}
+			};
+			xhr.open('GET','../php/search.php?kw='+$('[name="kw"]').val(),true);
+			xhr.send();
+		});*/
+		$('#header .go>a').click(function(e){
+			e.preventDefault();
+			if(($('#header .go>b').css('display')=="none")&&($('#go_box').css('display')=="none")){
+				$('#header .go>b').css('display','block');
+				$('#go_box').css('display','block');
+			}else{
+				$('#header .go>b').css('display','none');
+				$('#go_box').css('display','none');
+			}
+		});
+	},
+	
+};

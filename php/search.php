@@ -1,0 +1,19 @@
+<?php
+	header('Content-Type:text/html');
+	$kw=$_REQUEST['kw'];
+	$sql="SELECT * FROM search";
+	$conn=mysqli_connect('localhost','root','root','iphone',3306);
+	mysqli_query($conn,'SET NAMES UTF8');
+	$result=mysqli_query($conn,$sql);
+	$search=array();
+	while(($row=mysqli_fetch_assoc($result))!=null){
+		$search[]=$row;
+	};
+	for($i=0;$i<count($search);$i++){
+		$a=$search[$i]['name'];
+		if(stripos($a,$kw)!==FALSE){
+			echo "<li>$a</li>";
+		}
+
+	}
+?>

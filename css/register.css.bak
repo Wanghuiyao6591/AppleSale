@@ -1,0 +1,276 @@
+/**设置公共样式**/
+body,p,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body{
+	font-size:12px;
+	font-family:"微软雅黑";
+}
+body,#header,#search,#banner,#section,#footer,#search{
+	width:1200px;
+	margin:0px auto;
+}
+#header{
+	height:45px;
+	line-height:45px;
+	background-color:#363636;
+}
+#header>ul{
+	width:1000px;
+	height:45px;
+	line-height:45px;
+	margin:0px auto;
+}
+#header>ul>li{
+	float:left;
+	width:125px;
+	line-height:45px;
+}
+#header>ul>li>a{
+	text-decoration:none;
+	color:#fff;
+}
+#header>ul>li>a:hover{
+	color:#ddd;
+}
+#header>ul>li.current>a{
+	color:#ddd;
+}
+/**遮罩层**/
+#search{
+	height:45px;
+	line-height:45px;
+	width:1200px;
+	background-color:#363636;
+	position:relative;
+	top:0px;
+	z-index:10;
+	margin:0px auto;
+	display:none;
+}
+#search>.content>p{
+	float:left;
+	margin-left:100px;
+}
+#search input{
+	float:left;
+	width:600px;
+	line-height:30px;
+	margin-left:100px;
+	border:0px;
+	padding:0px;
+	outline:none;
+	margin-top:7px;
+	background:#363636 url('../img/search.png') no-repeat 0px 5px;
+	padding-left:28px;
+	font-size:16px;
+	color:#999999;
+}
+#search>.content>a{
+	float:left;
+	text-decoration:none;
+	font-size:16px;
+	color:#999999;
+	margin-left:127px;
+}
+#link{
+	width:630px;
+	background-color:#fff;
+	position:absolute;
+	top:45px;
+	left:220px;
+	padding:0px 20px 20px 20px;
+	color:#9F9F9F;
+}
+#link p{
+	clear:both;
+	font-size:12px;
+}
+#link li{
+	font-size:14px;
+	height:30px;
+	line-height:30px;
+	color:#9F9F9F;
+	padding-left:20px;
+	cursor:pointer;
+}
+
+#link li:hover{
+	color:#0A8CCE;
+	background-color:#eee;
+}
+/***购物车部分***/
+#header li.go{
+	position:relative;
+}
+#header li.go>b{
+	display:inline-block;
+	width:0px;
+	height:0px;
+	border:8px solid transparent;
+	border-bottom-color:#D6D6D6;
+	position:absolute;
+	top:37px;
+	left:5px;
+	z-index:11;
+	display:none;
+}
+#go_box{
+	width:290px;
+	padding:10px 0px;
+	background-color:#fff;
+	position:absolute;
+	top:53px;
+	left:-127px;
+	z-index:10;
+	border:1px solid #D6D6D6;
+	display:none;
+}
+#go_box>span{
+	display:inline-block;
+	line-height:30px;
+	width:300px;
+	color:#A1A1A1;
+	font-size:14px;
+	text-align:center;
+}
+#go_box>ul>li>img{
+	width:25px;
+	height:25px;
+	position:relative;
+	top:8px;
+	left:0px;
+	z-index:20;
+}
+#go_box>ul>li{
+	line-height:45px;
+	margin:5px 15px;
+	border-top:1px solid #E3E3E3;
+}
+#go_box>ul>li>a{
+	text-decoration:none;
+	color:#2C9CD4;
+}
+
+
+#aid{
+	width:1200px;
+	height:60px;
+	line-height:60px;
+	background-color:#F2F0F0;
+	margin:0px auto;
+	overflow:hidden;
+}
+#aid>h1{
+	float:left;
+	margin-left:125px;
+	color:#413E3B;
+	font-weight:normal;
+}
+#aid>ul{
+	float:right;
+	overflow:hidden;
+	margin-right:220px;
+}
+#aid>ul>li{
+	float:left;
+	margin:0px 10px;
+}
+#aid>ul>li>a{
+	text-decoration:none;
+	color:#3F3F40;
+}
+#aid>ul>li>a:hover{
+	text-decoration:underline;
+}
+#section>img{
+	width:1200px;
+}
+#section>p{
+	width:1200px;
+	text-align:center;
+	color:#AFA8B3;
+	font-size:14px;
+	padding:10px;
+}
+#section>p>a{
+	color:#4FABE0;
+	text-decoration:none;
+}
+#section>p>a:hover{
+	text-decoration:underline;
+}
+#section>form{
+	width:500px;
+	margin:0px auto;
+}
+#section>form>span{
+	display:inline-block;
+	width:500px;
+	height:30px;
+	line-height:30px;
+	border:1px solid #f00;
+	border-radius:3px;
+}
+#section>form>input{
+	width:500px;
+	height:35px;
+	line-height:35px;
+	margin:0px auto;
+	margin:10px 0px;
+	outline:none;
+	border:1px solid #ddd;
+	box-shadow:0 0 5px #ddd;
+	border-radius:5px;
+}
+#footer{
+	padding:20px 0px;
+	margin:0px auto;
+	width:1200px;
+	border-top:1px solid #ddd;
+	overflow:hidden;
+	margin-top:30px;
+}
+#footer>ul{
+	overflow:hidden;
+}
+#footer>ul>li{
+	float:right;
+	padding-left:10px;
+}
+#footer>ul>li>a{
+	color:#565B62;
+	text-decoration:none;
+}
+#footer>ul>li>a:hover{
+	text-decoration:underline;
+}
+#footer>ul>li>span{
+	color:#B7B7B7;
+}
+#footer>p{
+	float:left;
+	color:#B7B7B7;
+}
+#footer>p>a{
+	color:#565B62;
+	text-decoration:none;
+}
+#footer>p>a:hover{
+	text-decoration:underline;
+}
+#footer>h1{
+	font-weight:normal;
+	font-size:12px;
+	color:#B7B7B7;
+	margin-top:10px;
+}
+#footer>h1>a{
+	color:#565B62;
+	text-decoration:none;
+}
+#footer>h1>a:hover{
+	text-decoration:underline;
+}

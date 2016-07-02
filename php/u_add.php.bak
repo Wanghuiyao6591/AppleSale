@@ -1,0 +1,9 @@
+<?php
+	header('Content-Type:text/plain');
+	$uname=$_REQUEST['uname'];
+	$pwd=$_REQUEST['pwd'];
+	$sql="INSERT INTO users VALUES(NULL,'$uname','$pwd')";
+	$conn=mysqli_connect('localhost','root','root','user',3306);
+	mysqli_query($conn,'SET NAMES UTF8');
+	$result=mysqli_query($conn,$sql);
+?>

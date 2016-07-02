@@ -1,0 +1,79 @@
+ $(function(){
+	nav.init();
+});
+nav={
+	init:function(){
+		$('#header .search').click(function(){
+			$("#header").hide();
+			$('#search').show();
+			$('input:text').focus();
+		});
+		$('#search .x').click(function(){
+			$("#header").show();
+			$('#search').hide();
+		});
+		$('input:text').blur(function(){
+			$(this).val("");
+		});
+		$('[name="kw"]').keyup(function(){
+			$.get('../php/search.php',{kw:$('[name="kw"]').val()},function(data){
+				$('#link').html(data);
+			});
+		});
+		$("#link>ul").on("click","li", function() {
+				$('[name="kw"]').val($(this).html());
+		});
+		$('#goods>tbody').load("../php/me.php",function(){
+			var total=0;
+			$('#goods>tbody>tr>td:nth-child(6)>span').each(function(i){
+				total+=parseFloat($(this).html());
+			});	
+			$("#t").html(total);
+			$('.cal').click(function(){
+				var btn=$(this).html();
+				var n=parseFloat($(this).siblings('span').html());
+				if(btn=="-"){
+					if(n!=1){
+						n--;
+					}
+				}else{
+					n++;
+				}
+				$(this).siblings('span').html(n);
+				var span=parseFloat($(this).parent().prev('td').html());
+				$(this).parent().next('td').children().html(span*n);
+				var total=0;
+				$('#goods>tbody>tr>td:nth-child(6)>span').each(function(i){
+					total+=parseFloat($(this).html());
+				});	
+				$("#t").html(total);
+			});
+			$('.del').click(function(){
+				var name=$(this).parent().prev().prev().html();
+				var tag=confirm("确认删除商品"+name);
+				if(tag==true){
+					$(this).parent().parent().remove();
+					var num=$(this).parent().prev().prev().prev().prev().html();
+				$.post('../php/me1.php',{no:num});
+				}
+				var total=0;
+				$('#goods>tbody>tr>td:nth-child(6)>span').each(function(i){
+					total+=parseFloat($(this).html());
+				});	
+				$("#t").html(total);
+			});
+		});
+		$('#exit').click(function(e){
+			e.preventDefault();
+			var tag=confirm("是否确认退出？");
+			if(tag==true){
+				location.href="index.html";
+			}else{
+				location.href="#";
+			}
+		});
+	},
+	
+};
+
+

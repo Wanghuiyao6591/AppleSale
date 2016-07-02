@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+   <link rel="stylesheet" href="../css/dl.css">
+ </head>
+ <body>
+	<header id="header">
+		<ul>
+			<li>
+				<a href="index.html">
+					<img src="../img/Apple_03.png" alt="" style="margin-top:8px">
+				</a>
+			</li>	
+			<li>
+				<a href="mac.html">Mac</a>
+			</li>
+			<li>
+				<a href="ipad.html">iPad</a>
+			</li>
+			<li>
+				<a href="iphone.html">iPhone</a>
+			</li>
+			<li>
+				<a href="watch.html">Watch</a>
+			</li>
+			<li>
+				<a href="music.html">Music</a>
+			</li>
+			<li class="search">
+				<a href="#">
+					<img src="../img/search.png" alt="" style="margin-top:12px">
+				</a>
+			</li>
+			<li class="go">
+				<a href="#">
+					<img src="../img/go.png" alt="" style="margin-top:10px">
+				</a>
+				<b></b>
+				<div id="go_box">
+					<span>您的购物袋是空的</span>
+					<ul>
+						<li>
+							<img src="../img/1.png" alt="">
+							<a href="gwc">购物车</a>
+						</li>
+						<li>
+							<img src="../img/2.png" alt="">
+							<a href="sc">收藏</a>
+						</li>
+						<li>
+							<img src="../img/3.png" alt="">
+							<a href="dd">订单</a>
+						</li>
+						<li>
+							<img src="../img/4.png" alt="">
+							<a href="zh">账户</a>
+						</li>
+						<li>
+							<img src="../img/5.png" alt="">
+							<a href="dl.html" id="uname">登录</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="search">
+			<div class="content">
+				<p>
+					<a href="#">
+						<img src="../img/Apple_03.png" alt="" style="margin-top:8px">
+					</a>
+				</p>
+				<input type="text" placeholder="搜索 apple.com" name="kw">
+				<div id="link">
+					<p>快速链接</p>
+					<ul>
+						<li>查找零售店</li>
+						<li>配件</li>
+						<li>iPod</li>
+						<li>ios</li>
+					</ul>
+				</div>
+				<a href="#" class="x">X</a>
+			</div>
+	</div>
+	<section id="section">
+		<div id="login">
+			<h1>请登录</h1>
+			<p><img src="../img/s.png" alt=""></p>
+			<div class="all">
+				<div class="lf">
+					<h2>登 陆 Apple Store</h2>
+					<input type="text" name="uname" placeholder="Apple ID*"><br>
+					<input type="password" name="pwd" placeholder="密码"><br>
+					<a href="#">忘记了自己的Apple ID或密码？</a>
+					<input type="button" value="登录" class="d" name="login">
+				</div>
+				<div class="rt">
+					<p>你可以使用自己的 Apple ID 来享用其他<br> Apple 服务，例如</p>
+					<ol>
+						<li>App Store</li>
+						<li>iTunes Store</li>
+						<li>iPhoto 打印服务</li>
+						<li>iCloud</li>
+					</ol>
+					<a href="register.html">没有Apple ID？立即创建一个。</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/dl.js"></script>
+ </body>
+</html>

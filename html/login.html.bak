@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+   <link rel="stylesheet" href="../css/mac.css">
+ </head>
+ <body>
+	<header id="header" class="navi">
+		<ul>
+			<li>
+				<a href="index.html">
+					<img src="../img/Apple_03.png" alt="" style="margin-top:8px">
+				</a>
+			</li>	
+			<li class="current">
+				<a href="mac.html">Mac</a>
+			</li>
+			<li>
+				<a href="ipad.html">iPad</a>
+			</li>
+			<li>
+				<a href="iphone.html">iPhone</a>
+			</li>
+			<li>
+				<a href="watch.html">Watch</a>
+			</li>
+			<li>
+				<a href="music.html">Music</a>
+			</li>
+			<li class="search">
+				<a href="#">
+					<img src="../img/search.png" alt="" style="margin-top:12px">
+				</a>
+			</li>
+			<li class="go">
+				<a href="#">
+					<img src="../img/go.png" alt="" style="margin-top:10px">
+				</a>
+				<b></b>
+				<div id="go_box">
+					<span>您的购物袋是空的</span>
+					<ul>
+						<li>
+							<img src="../img/1.png" alt="">
+							<a href="gwc">购物车</a>
+						</li>
+						<li>
+							<img src="../img/2.png" alt="">
+							<a href="sc">收藏</a>
+						</li>
+						<li>
+							<img src="../img/3.png" alt="">
+							<a href="dd">订单</a>
+						</li>
+						<li>
+							<img src="../img/4.png" alt="">
+							<a href="zh">账户</a>
+						</li>
+						<li>
+							<img src="../img/5.png" alt="">
+							<a href="dl">登录</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="search">
+			<div class="content">
+				<p>
+					<a href="#">
+						<img src="../img/Apple_03.png" alt="" style="margin-top:8px">
+					</a>
+				</p>
+				<input type="text" placeholder="搜索 apple.com" name="kw">
+				<div id="link">
+					<p>快速链接</p>
+					<ul>
+						<li>查找零售店</li>
+						<li>配件</li>
+						<li>iPod</li>
+						<li>ios</li>
+					</ul>
+				</div>
+				<a href="#" class="x">X</a>
+			</div>
+	</div>
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/mac.js"></script>
+ </body>
+</html>

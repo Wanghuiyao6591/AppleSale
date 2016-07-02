@@ -1,0 +1,402 @@
+/****公共样式****/
+body{
+	font-size:12px;
+	font-family:"微软雅黑";
+}
+body,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body,#nav,#banner,#mian,#foot{
+	width:1200px;
+	margin:0px auto;
+}
+.lf{
+	float:left;
+}
+.rf{
+	float:right;
+}
+
+/***主体内容产品介绍部分***/
+#product{
+    width:1200px;
+	height:283px;
+	background-color:#EFEFEF;
+	clear:both;
+}
+#product div{
+   float:left;
+}
+#product>div.left{
+	margin-left:100px;
+	width:230px;
+	text-align:center;
+	margin-left:120px;
+}
+#product>div.left>h2{
+	color:#626262;
+}
+#product>div.left>img{
+	margin:20px 0px;
+}
+#product>div.left>p{
+	line-height:20px;
+	margin-bottom:20px;
+}
+#product>div.left>a{
+	color:#17B4FD;
+	text-decoration:none;
+}
+#pj{
+	width:1200px;
+	margin-top:60px;
+	overflow:hidden;
+}
+/**产品介绍**/
+#produce{
+	width:1200px;
+	padding:20px 0px 50px 0px;
+	background-color:#EFEFEF;
+	margin:60px 0px;
+}
+#produce>h1{
+	color:#717171;
+	font-size:16pt;
+}
+#produce>ul{
+	overflow:hidden;
+	margin:20px 100px 0px 100px;
+}
+#produce>ul>li{
+	float:left;
+	width:250px;
+	height:200px;
+	position:relative;
+}
+#produce>ul>li.current>b{
+	float:inline-block;
+	background-color:#A0A0A0;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	opacity:0.3;
+	display:none;
+}
+#produce>ul>li>b{
+	display:inline-block;
+	background-color:#A0A0A0;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	opacity:1;
+	
+}
+#produce>ul>li.current>div{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	color:#fff;
+	line-height:24px;
+	display:none;
+}
+#produce>ul>li.current>div>h2,#produce>ul>li.current>div>p{
+	margin:10px;
+}
+#produce>ul>li.current>div>a.left>img{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+#produce>ul>li.current>div>a.right>img{
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+/**技术支持**/
+#jszc{
+	width:1200px;
+	overflow:hidden;
+	position:relative;
+}
+#jszc>h1{
+	color:#717171;
+	font-size:16pt;
+	margin:20px 0px;
+}
+#jszc>img{
+	float:left;
+	margin-left:100px;
+	position:relative;
+	top:0px;
+	left:0px;
+	transition:top 0.3s linear;
+}
+#jszc>img:hover{
+	top:-3px;
+}
+#jszc>div{
+	position:absolute;
+	bottom:10px;
+	left:130px;
+	color:#fff;
+}
+#jszc>div>h2{
+	font-family:normal;
+}
+#jszc>div>a{
+	text-decoration:none;
+	color:#0291D5;
+}
+#jszc>ul{
+	float:left;
+	width:500px;
+	overflow:hidden;
+}
+#jszc>ul>li{
+	float:left;
+	width:242px;
+	margin-left:5px;
+	margin-top:3px;
+	position:relative;
+	top:0px;
+	left:0px;
+	transition:top 0.2s linear;
+}
+#jszc>ul>li>div{
+	position:absolute;
+	bottom:8px;
+	left:20px;
+	color:#fff;
+	z-index:5;
+	font-size:5px;
+}
+
+#jszc>ul>li>div>a{
+	text-decoration:none;
+	color:#0291D5;
+}
+#jszc>ul>li:hover{
+	top:-3px;
+}
+#header{
+	height:45px;
+	line-height:45px;
+	background-color:#363636;
+}
+#header>ul{
+	width:1000px;
+	height:45px;
+	line-height:45px;
+	margin:0px auto;
+}
+#header>ul>li{
+	float:left;
+	width:125px;
+	line-height:45px;
+}
+#header>ul>li>a{
+	text-decoration:none;
+	color:#fff;
+}
+#header>ul>li>a:hover{
+	color:#ddd;
+}
+#header>ul>li.current>a{
+	color:#ddd;
+}
+/**遮罩层**/
+#search{
+	height:45px;
+	line-height:45px;
+	width:1200px;
+	background-color:#363636;
+	position:relative;
+	top:0px;
+	z-index:10;
+	margin:0px auto;
+	display:none;
+}
+#search>.content>p{
+	float:left;
+	margin-left:100px;
+}
+#search input{
+	float:left;
+	width:600px;
+	line-height:30px;
+	margin-left:100px;
+	border:0px;
+	padding:0px;
+	outline:none;
+	margin-top:7px;
+	background:#363636 url('../img/search.png') no-repeat 0px 5px;
+	padding-left:28px;
+	font-size:16px;
+	color:#999999;
+}
+#search>.content>a{
+	float:left;
+	text-decoration:none;
+	font-size:16px;
+	color:#999999;
+	margin-left:127px;
+}
+#link{
+	width:630px;
+	background-color:#fff;
+	position:absolute;
+	top:45px;
+	left:220px;
+	padding:0px 20px 20px 20px;
+	color:#9F9F9F;
+}
+#link p{
+	clear:both;
+	font-size:12px;
+}
+#link li{
+	font-size:14px;
+	height:30px;
+	line-height:30px;
+	color:#9F9F9F;
+	padding-left:20px;
+	cursor:pointer;
+}
+
+#link li:hover{
+	color:#0A8CCE;
+	background-color:#eee;
+}
+/***购物车部分***/
+#header li.go{
+	position:relative;
+}
+#header li.go>b{
+	display:inline-block;
+	width:0px;
+	height:0px;
+	border:8px solid transparent;
+	border-bottom-color:#D6D6D6;
+	position:absolute;
+	top:37px;
+	left:5px;
+	z-index:11;
+	display:none;
+}
+#go_box{
+	width:290px;
+	padding:10px 0px;
+	background-color:#fff;
+	position:absolute;
+	top:53px;
+	left:-127px;
+	z-index:10;
+	border:1px solid #D6D6D6;
+	display:none;
+}
+#go_box>span{
+	display:inline-block;
+	line-height:30px;
+	width:300px;
+	color:#A1A1A1;
+	font-size:14px;
+	text-align:center;
+}
+#go_box>ul>li>img{
+	width:25px;
+	height:25px;
+	position:relative;
+	top:8px;
+	left:0px;
+	z-index:20;
+}
+#go_box>ul>li{
+	line-height:45px;
+	margin:5px 15px;
+	border-top:1px solid #E3E3E3;
+}
+#go_box>ul>li>a{
+	text-decoration:none;
+	color:#2C9CD4;
+}
+/*底部内容*/
+#footer{
+	background-color:#F2F2F2;
+	margin-top:5px;
+	padding:10px 0px 30px 0px;
+	overflow:hidden;
+}
+
+.msg{
+	width:1000px;
+	overflow:hidden;
+	margin:0px auto;
+	text-align:center;
+}
+.msg ul{
+	width:200px;
+	line-height:20px;
+	float:left;
+}
+.msg ul li a{
+	text-decoration:none;
+	color:#6A6A77;
+}
+.msg ul li a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+.msg ul li b{
+	color:#333333;
+}
+#footer p.xg{
+	width:900px;
+	margin-left:140px;
+	margin-top:20px;
+	padding-bottom:5px;
+	color:#A9A199;
+	border-bottom:1px solid #E3E3E3;
+}
+#footer p a{
+	text-decoration:none;
+	color:#6291CC;
+}
+#footer p a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+#footer p.left{
+	float:left;
+	margin-left:140px;
+	margin-top:10px;
+	color:#A9A199;
+}
+#footer div.right{
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+	color:#A9A199;
+	margin-bottom:10px;
+}
+#footer div.right a{
+	text-decoration:none;
+	color:#666;
+	padding:0px 10px;
+}
+#footer p.last{
+	clear:both;
+	margin-left:140px;
+	color:#A9A199;
+}
+#footer div.right a:hover{
+	text-decoration:underline;
+	color:#000;
+}

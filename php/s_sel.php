@@ -1,0 +1,18 @@
+<?php
+	//header('Content-Type:application/json');
+	header('Content-Type:text/plain');
+	$uname=$_REQUEST['s_uname'];
+	$sql="SELECT * FROM search WHERE name='$uname'";
+	$conn=mysqli_connect('localhost','root','root','iphone',3306);
+	mysqli_query($conn,'SET NAMES UTF8');
+	$result=mysqli_query($conn,$sql);
+	$row=mysqli_fetch_assoc($result);
+	if($row){
+		//echo json_encode($row);
+		echo "查询的商品为$row[name]";
+	}else {
+		echo '该商品不存在';
+	}
+
+	
+?>

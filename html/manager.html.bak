@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>后台管理</title>
+  <link rel="stylesheet" href="../css/manager.css">
+ </head>
+ <body>
+	<section id="section">
+		<h1>后台管理</h1>
+		<div class="left">
+			<ul class="all">
+				<li data-s="#one">用户管理
+				</li>
+				<li data-s="#two">商品管理
+				</li>
+				<li data-s="#three">搜索管理
+				</li>
+			</ul>
+		</div>
+		<div class="right">
+			<div id="one" class="open">
+				<div>
+					<button id="add_u">添加用户</button><br>
+					<button id="select_u">查询用户</button>
+				</div>
+				<form action="" name="form">
+					<input type="text" name="uname" placeholder="请输入用户名"><br>
+					<input type="password" name="pwd" placeholder="请输入密码"><br>
+					<input type="button" value="确认添加" name="btn">
+				</form>
+				<form action="" name="form1">
+					<input type="text" name="uid" placeholder="请输入要查询的用户编号"><br>
+					<input type="button" value="点击查询" name="btn1">
+				</form>
+				<form action="" name="form2">
+					<input type="text" name="uname2"><br>
+					<input type="password" name="pwd2"><br>
+					<input type="button" value="确认修改" name="btn2">
+				</form>
+				<table border="1px">
+					<thead>
+						<tr>
+							<td>用户ID</td>
+							<td>用户名</td>
+							<td>用户密码</td>
+							<td>删除</td>
+							<td>修改</td>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+			<div id="two">
+				<div>
+					<button id="add_g">添加商品</button><br>
+					<button id="select_g">查询商品</button>
+				</div>
+				<form action="" name="g_form">
+					<input type="text" name="g_uname" placeholder="请输入产品名称"><br>
+					<input type="text" name="g_price" placeholder="请输入产品价格"><br>
+					<input type="text" name="g_img" placeholder="请输入产品类型"><br>
+					<input type="button" value="确认添加" name="g_btn">
+				</form>
+				<form action="" name="g_form1">
+					<input type="text" name="g_uid" placeholder="请输入要删除的商品编号"><br>
+					<input type="button" value="点击查询" name="g_btn1">
+				</form>
+				<form action="" name="g_form2">
+					<input type="text" name="g_uname2" placeholder="请输入产品名称"><br>
+					<input type="text" name="g_price2" placeholder="请输入产品价格"><br>
+					<input type="text" name="g_img2" placeholder="请输入产品类型"><br>
+					<input type="button" value="确认修改" name="g_btn2">
+				</form>
+				<table>
+					<thead>
+						<tr>
+							<td>产品编号</td>
+							<td>产品类型</td>
+							<td>产品名称</td>
+							<td>产品价格</td>
+							<td>删除</td>
+							<td>修改</td>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+			<div id="three">
+				<div>
+					<button id="add_s">添加关键词</button><br>
+					<button id="select_s">查询关键词</button>
+				</div>
+				<form action="" name="s_form">
+					<input type="text" name="s_uname" placeholder="请输入搜索关键词"><br>
+					<input type="button" value="确认添加" name="s_btn">
+				</form>
+				<form action="" name="s_form1">
+					<input type="text" name="s_uname" placeholder="请输入要查询关键词"><br>
+					<input type="button" value="点击查询" name="s_btn1">
+				</form>
+				<form action="" name="s_form2">
+					<input type="text" name="s_uname2"><br>
+					<input type="password" name="s_pwd2"><br>
+					<input type="button" value="确认修改" name="s_btn2">
+				</form>
+				<table>
+					<thead>
+						<tr>
+							<td>产品名称</td>
+							<td>删除</td>
+							<td>修改</td>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/manager.js"></script>
+ </body>
+</html>

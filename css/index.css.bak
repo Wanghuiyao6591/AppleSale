@@ -1,0 +1,301 @@
+/**设置公共样式**/
+body,p,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body{
+	font-size:12px;
+	font-family:"微软雅黑";
+}
+body,#header,#search,#banner,#section,#footer,#search{
+	width:1200px;
+	margin:0px auto;
+}
+#header{
+	height:45px;
+	line-height:45px;
+	background-color:#363636;
+}
+#header>ul{
+	width:1000px;
+	height:45px;
+	line-height:45px;
+	margin:0px auto;
+}
+#header>ul>li{
+	float:left;
+	width:125px;
+	line-height:45px;
+}
+#header>ul>li>a{
+	text-decoration:none;
+	color:#fff;
+}
+#header>ul>li>a:hover{
+	color:#ddd;
+}
+/**遮罩层**/
+#search{
+	height:45px;
+	line-height:45px;
+	width:1200px;
+	background-color:#363636;
+	position:relative;
+	top:0px;
+	z-index:10;
+	margin:0px auto;
+	display:none;
+}
+#search>.content>p{
+	float:left;
+	margin-left:100px;
+}
+#search input{
+	float:left;
+	width:600px;
+	line-height:30px;
+	margin-left:100px;
+	border:0px;
+	padding:0px;
+	outline:none;
+	margin-top:7px;
+	background:#363636 url('../img/search.png') no-repeat 0px 5px;
+	padding-left:28px;
+	font-size:16px;
+	color:#999999;
+}
+#search>.content>a{
+	float:left;
+	text-decoration:none;
+	font-size:16px;
+	color:#999999;
+	margin-left:127px;
+}
+#link{
+	width:630px;
+	background-color:#fff;
+	position:absolute;
+	top:45px;
+	left:220px;
+	padding:0px 20px 20px 20px;
+	color:#9F9F9F;
+}
+#link p{
+	clear:both;
+	font-size:12px;
+}
+#link li{
+	font-size:14px;
+	height:30px;
+	line-height:30px;
+	color:#9F9F9F;
+	padding-left:20px;
+	cursor:pointer;
+}
+
+#link li:hover{
+	color:#0A8CCE;
+	background-color:#eee;
+}
+/***购物车部分***/
+#header li.go{
+	position:relative;
+}
+#header li.go>b{
+	display:inline-block;
+	width:0px;
+	height:0px;
+	border:8px solid transparent;
+	border-bottom-color:#D6D6D6;
+	position:absolute;
+	top:37px;
+	left:5px;
+	z-index:11;
+}
+#go_box{
+	width:290px;
+	padding:10px 0px;
+	background-color:#fff;
+	position:absolute;
+	top:53px;
+	left:-127px;
+	z-index:10;
+	border:1px solid #D6D6D6;
+}
+#go_box>span{
+	display:inline-block;
+	line-height:30px;
+	width:300px;
+	color:#A1A1A1;
+	font-size:14px;
+	text-align:center;
+}
+#go_box>ul>li>img{
+	width:25px;
+	height:25px;
+	position:relative;
+	top:8px;
+	left:0px;
+	z-index:20;
+}
+#go_box>ul>li{
+	line-height:45px;
+	margin:5px 15px;
+	border-top:1px solid #E3E3E3;
+}
+#go_box>ul>li>a{
+	text-decoration:none;
+	color:#2C9CD4;
+}
+/*广告*/
+#banner{
+	overflow:hidden;
+	position:relative;
+	margin-top:5px;
+}
+#banner>img.left{
+	position:absolute;
+	top:264px;
+	left:20px;
+	z-index:6;
+	display:none;
+	cursor:pointer;
+}
+#banner>img.right{
+	position:absolute;
+	top:264px;
+	left:1150px;
+	z-index:6;
+	display:none;
+	cursor:pointer;
+}
+#img{
+	position:relative;
+	height:577px;
+	top:0px;
+	left:0px;
+	overflow:hidden;
+}
+#img li{
+	float:left;
+	width:1200px;
+}
+#img li img{
+	width:1200px;
+}
+#idx{
+	position:absolute;
+	top:550px;
+	left:580px;
+	overflow:hidden;
+}
+#idx li{
+	float:left;
+	width:10px;
+	height:10px;
+	border:1px solid #00AEFF;
+	border-radius:50%;
+	background-color:#fff;
+	margin-left:10px;
+}
+#idx li{
+	float:left;
+	width:8px;
+	height:8px;
+	border:1px solid #00AEFF;
+	border-radius:50%;
+	background-color:#fff;
+	margin-left:10px;
+	cursor:pointer;
+}
+#idx li.hover{
+	border:1px solid #aaa;
+	background-color:#aaa;
+}
+#section{
+	margin-top:15px;
+}
+#section li{
+	float:left;
+	width:300px;
+}
+#section ul{
+	overflow:hidden;
+}
+#foot{
+	height:355px;
+}
+/*底部内容*/
+#footer{
+	background-color:#F2F2F2;
+	margin-top:5px;
+	padding:10px 0px 30px 0px;
+	overflow:hidden;
+}
+
+.msg{
+	width:1000px;
+	overflow:hidden;
+	margin:0px auto;
+	text-align:center;
+}
+.msg ul{
+	width:200px;
+	line-height:20px;
+	float:left;
+}
+.msg ul li a{
+	text-decoration:none;
+	color:#6A6A77;
+}
+.msg ul li a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+.msg ul li b{
+	color:#333333;
+}
+#footer p.xg{
+	width:900px;
+	margin-left:140px;
+	margin-top:20px;
+	padding-bottom:5px;
+	color:#A9A199;
+	border-bottom:1px solid #E3E3E3;
+}
+#footer p a{
+	text-decoration:none;
+	color:#6291CC;
+}
+#footer p a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+#footer p.left{
+	float:left;
+	margin-left:140px;
+	margin-top:10px;
+	color:#A9A199;
+}
+#footer div.right{
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+	color:#A9A199;
+	margin-bottom:10px;
+}
+#footer div.right a{
+	text-decoration:none;
+	color:#666;
+	padding:0px 10px;
+}
+#footer p.last{
+	clear:both;
+	margin-left:140px;
+	color:#A9A199;
+}
+#footer div.right a:hover{
+	text-decoration:underline;
+	color:#000;
+}

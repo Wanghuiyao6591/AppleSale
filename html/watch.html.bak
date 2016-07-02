@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <link type="text/css" rel="styleSheet" href="../css/watch.css"/>
+ </head>
+ <body>
+	<header id="header" class="navi">
+		<ul>
+			<li>
+				<a href="index.html">
+					<img src="../img/Apple_03.png" alt="" style="margin-top:8px">
+				</a>
+			</li>	
+			<li>
+				<a href="mac.html">Mac</a>
+			</li>
+			<li>
+				<a href="ipad.html">iPad</a>
+			</li>
+			<li>
+				<a href="iphone.html">iPhone</a>
+			</li>
+			<li class="current">
+				<a href="watch.html">Watch</a>
+			</li>
+			<li>
+				<a href="music.html">Music</a>
+			</li>
+			<li class="search">
+				<a href="#">
+					<img src="../img/search.png" alt="" style="margin-top:12px">
+				</a>
+			</li>
+			<li class="go">
+				<a href="#">
+					<img src="../img/go.png" alt="" style="margin-top:10px">
+				</a>
+				<b></b>
+				<div id="go_box">
+					<span>您的购物袋是空的</span>
+					<ul>
+						<li>
+							<img src="../img/1.png" alt="">
+							<a href="gwc">购物车</a>
+						</li>
+						<li>
+							<img src="../img/2.png" alt="">
+							<a href="sc">收藏</a>
+						</li>
+						<li>
+							<img src="../img/3.png" alt="">
+							<a href="dd">订单</a>
+						</li>
+						<li>
+							<img src="../img/4.png" alt="">
+							<a href="zh">账户</a>
+						</li>
+						<li>
+							<img src="../img/5.png" alt="">
+							<a href="dl.html">登录</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</header>
+	<div id="search">
+			<div class="content">
+				<p>
+					<a href="#">
+						<img src="../img/Apple_03.png" alt="" style="margin-top:8px">
+					</a>
+				</p>
+				<input type="text" placeholder="搜索 apple.com" name="kw">
+				<div id="link">
+					<p>快速链接</p>
+					<ul>
+						<li>查找零售店</li>
+						<li>配件</li>
+						<li>iPod</li>
+						<li>ios</li>
+					</ul>
+				</div>
+				<a href="#" class="x">X</a>
+			</div>
+	</div>
+	<!--主体内容-->
+	<section id="main">
+		<!--产品介绍-->
+		<div id="product">
+			<div class="left">
+				<h2>Pro App</h2>
+				<img src="../imgs/e_07.png"/>
+				<p>对于想要尽情发挥创意的专业人士而言，这里有众多为业界所推崇的App,可以更好的掌控音乐和影视的剪辑，处理和输出</p>
+				<a href="#">进一步了解></a>
+			</div>
+			<div class="left">
+				<h2>iPid Pro</h2>
+				<img src="../imgs/e_09.png"/>
+				<p>iOS9为你日常使用的众多强大内置app带来了重大提升，而全新的多任务处理功能，还会帮助你更有效率</p>
+				<a href="#">进一步了解></a>
+			</div>
+			<div class="left">
+				<h2>iPhone</h2>
+				<img src="../imgs/e_11.png"/>
+				<p>有了Apple Play,轻轻一触**，你就可以使用iPhone在全国数百万家商店及众多app内安全、简单的进行支付</p>
+				<a href="#">进一步了解></a>
+			</div>
+		</div>
+		<!--iphone配件-->
+		<div id="pj">
+			<img src="../imgs/r1_07.jpg"/>
+			<img class="lf" src="../imgs/r1_10.jpg"/>
+			<img class="rf" src="../imgs/r1_11.jpg"/>
+		</div>
+		<!--产品介绍-->
+		<div id="produce">
+			<h1>产品介绍</h1>
+			<ul>
+				<li class="current">
+					<img src="../imgs/tt_07.jpg"/>
+					<b></b>
+					<div>
+						<h2>Apple 与商务</h2>
+						<p>iPhone、iPad以及功能强大的Mac系列笔记本和台式电脑，赋予你所需要的一切，随时让业务运行焕然一新。而如今有了Apple Watch,你将拥有更多方式令效率倍增。</p>
+						<a class="left" href="#"><img src="../imgs/view1.png"></a>
+						<a class="right" href="#"><img src="../imgs/link1.png"></a>
+					</div>
+				</li>
+				<li>
+					<b></b>
+				</li>
+				<li class="current">
+					<img src="../imgs/tt_09.jpg"/>
+					<b></b>
+					<div>
+						<h2 style="margin:70px 10px 10px 10px">让出色的iPhone更加的出彩。</h2>
+						<a class="left" href="#"><img src="../imgs/view2.png"></a>
+						<a class="right" href="#"><img src="../imgs/link2.png"></a>
+					</div>
+				</li>
+				<li>
+					<b>
+					</b>
+				</li>
+				<li class="current">
+					<img src="../imgs/tt_16.jpg"/>
+					<b></b> 
+					<div>
+						<h2>Mac Book<br>轻于时代，先于时代</h2>
+						<p>我们给自己限定了一个几乎不可能实现的目标，在有史以来最为轻盈纤薄的Mac笔记本电脑上，打造全尺寸的使用体验</p>
+						<a class="left" href="#"><img src="../imgs/view3.png"></a>
+						<a class="right" href="#"><img src="../imgs/link3.png"></a>
+					</div>
+				</li>
+				<li class="current">
+					<img src="../imgs/tt_11.jpg"/>
+					<b></b>
+					<div>
+						<h2>App与Music</h2>
+						<p>App Music现已推出三个月免费试用。无论是你一个人独享，还是全家共享。App Music都有适用你的会员方案。个人会员每月 RMB 10，家庭会员 RMB 15</p>
+						<a class="left" href="#"><img src="../imgs/view4.png"></a>
+						<a class="right" href="#"><img src="../imgs/link4.png"></a>
+					</div>
+				</li>
+				<li>
+					<b>
+					</b>
+				</li>
+				<li class="current">
+					<img src="../imgs/tt_19.jpg"/>
+					<b></b>
+					<div>
+						<h2>App与教育</h2>
+						<p>iPid 与 Mac 扩展了课堂内外的可能性。iPid 为学习开启了新机会，Mac位激发创造力提供了强大动力。</p>
+						<a class="left" href="#"><img src="../imgs/view5.png"></a>
+						<a class="right" href="#"><img src="../imgs/link5.png"></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--技术支持-->
+		<div id="jszc">
+			<h1>技术支持</h1>
+			<img src="../imgs/zz_07.jpg"/>
+			<div>
+				<h2>确保Apple 账户与安全的提示</h2>
+				<p>我们将介绍一些实用的提示，协助您确保 Apple ID 和账户安全信息</p>
+				<a href="#">获取有关确保账户安全的帮助</a>
+			</div>
+			<ul>
+				<li>
+					<img src="../imgs/zz_09.jpg"/>
+					<div>
+						<p>查看您的订单</p>
+						<a href="#">查看您的订单></a>
+					</div>
+				</li>
+				<li>
+					<img src="../imgs/zz_11.jpg"/>
+					<div>
+						<p>保修/序列号</p>
+						<a href="#">提供序列号></a>
+					</div>
+				</li>
+				<li>
+					<img src="../imgs/zz_15.jpg"/>
+					<div>
+						<p>Apple ID</p>
+						<a href="#">获取有关Apple ID的帮助></a>
+					</div>
+				</li>
+				<li>
+					<img src="../imgs/zz_16.jpg"/>
+					<div>
+						<p>Apple 支持社区</p>
+						<a href="#">加入对话></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="msg">
+			<ul>
+				<li>
+					<a href="#"><b>选购及了解</b></a>
+				</li>
+				<li>
+					<a href="mac.html">Mac</a>
+				</li>
+				<li>
+					<a href="ipad.html">iPad</a>
+				</li>
+				<li>
+					<a href="iphone.html">iPhone</a>
+				</li>
+				<li>
+					<a href="watch.html">Watch</a>
+				</li>
+				<li>
+					<a href="music.html">Music</a>
+				</li>
+				<li>
+					<a href="itunes.html">iTunes</a>
+				</li>
+				<li>
+					<a href="ipod.html">iPod</a>
+				</li>
+				<li>
+					<a href="pj.html">配件</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="store.html"><b>Apple Store商店</b></a>
+				</li>
+				<li>
+					<a href="lsd.html">查找零售店</a>
+				</li>
+				<li>
+					<a href="bar.html">Genius Bar天才吧</a>
+				</li>
+				<li>
+					<a href="study.html">讲座和学习</a>
+				</li>
+				<li>
+					<a href="hd.html">青少年活动</a>
+				</li>
+				<li>
+					<a href="app.html">Apple Store APP</a>
+				</li>
+				<li>
+					<a href="fx.html">翻新产品</a>
+				</li>
+				<li>
+					<a href="fq.html">分期付款</a>
+				</li>
+				<li>
+					<a href="cf.html">重复使用和循环利用</a>
+				</li>
+				<li>
+					<a href="ddzt.html">订单状态</a>
+				</li>
+				<li>
+					<a href="help.html">选购帮助</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="jy.html"><b>教育应用</b></a>
+				</li>
+				<li>
+					<a href="yu.html">Apple与教育</a>
+				</li>
+				<li>
+					<a href="school.html">高校师生选购</a>
+				</li>
+				<li style="margin-top:20px;">
+					<a href="sw.html"><b>商务应用</b></a>
+				</li>
+				<li>
+					<a href="and.html">Apple与商务</a>
+				</li>
+				<li>
+					<a href="swxg.html">商务选购</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="zh.html"><b>账户</b></a>
+				</li>
+				<li>
+					<a href="id.html">管理你的Apple ID</a>
+				</li>
+				<li>
+					<a href="applestore.html">Apple Store账户</a>
+				</li>
+				<li>
+					<a href="icould.html">iCould.com</a>
+				</li>
+				<li style="margin-top:20px;">
+					<a href="jz.html"><b>Apple价值观</b></a>
+				</li>
+				<li>
+					<a href="hj.html">环境责任</a>
+				</li>
+				<li>
+					<a href="gys.html">供应商责任</a>
+				</li>
+				<li>
+					<a href="fz.html">辅助功能</a>
+				</li>
+				<li>
+					<a href="ys.html">隐私</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="about.html"><b>关于Apple</b></a>
+				</li>
+				<li>
+					<a href="zx.html">Apple咨询</a>
+				</li>
+				<li>
+					<a href="gz.html">工作机会</a>
+				</li>
+				<li>
+					<a href="zx.html">媒体资讯</a>
+				</li>
+				<li>
+					<a href="hd.html">活动</a>
+				</li>
+				<li>
+					<a href="news.html">热点新闻</a>
+				</li>
+				<li>
+					<a href="connect.html">联系Apple</a>
+				</li>
+			</ul>
+		</div>
+		<p class="xg">更多选购方式:<a href="#">前往Apple Store零售店</a>,致电400-666-8800或查找在你附近的<a href="#">授权经销商</a>。</p>
+		<p class="left">Copyright© Apple Inc.保留所有权利。</p>
+		<div class="right">
+			<a href="#">隐私政策</a>|
+			<a href="#">使用条款</a>|
+			<a href="#">销售政策</a>|
+			<a href="#">法律信息</a>|
+			<a href="#">网站地图</a>
+		</div>
+		<p class="last">京公安网安备 11010500896 京ICP备 10214630</p>
+	</footer>
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/watch.js"></script>
+ </body>
+</html>

@@ -1,0 +1,130 @@
+/**设置公共样式**/
+body,p,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body{
+	font-size:12px;
+	font-family:"微软雅黑";
+}
+body,#section{
+	width:1200px;
+	margin:0px auto;
+}
+#section{
+	margin-top:20px;
+	text-align:center;
+	font-size:14px;
+	overflow:hidden;
+	margin-bottom:50px;
+}
+#section>h1{
+	font-size:20px;
+}
+#section>div.left{
+	float:left;
+	margin-top:30px;
+	width:260px;
+	height:1200px;
+	padding:20px 20px 0px 20px;
+	background-color:#363636;
+}
+#section>div.left>ul.all>li{
+	line-height:30px;
+	text-align:left;
+	color:#fff;
+	border-bottom:1px dotted #666;
+	
+}
+
+#section>div.left>ul.all>li:hover{
+	cursor:pointer;
+	background-color:#999;
+	color:#ddd;
+}
+
+#section>.right>.open{
+}
+#one{
+	float:left;
+	width:800px;
+	height:1220px;
+	background-color:#F6F6F6;
+	border:1px solid #ddd;
+	overflow:hidden;
+	margin-top:30px;
+}
+table{
+	width:700px;
+	margin-top:170px;
+	text-align:center;
+	margin-left:20px;
+	border:1px solid #aaa;
+	border-collapse:collapse;
+}
+table td{
+	border:1px solid #aaa;
+	padding:5px 10px;
+}
+#one>div{
+	margin-top:30px;
+	float:left;
+	margin-left:20px;
+}
+#one>div>button{
+	padding:5px 10px;
+	margin-top:10px;
+}
+form{
+	text-align:center;
+	margin-top:20px;
+	float:left;
+	margin-left:100px;
+	margin-bottom:30px;
+	display:none;
+}
+form>input{
+	width:300px;
+	height:25px;
+	line-height:25px;
+	outline:none;
+	margin-top:20px;
+}
+#two{
+	float:left;
+	width:800px;
+	height:620px;
+	margin-top:30px;
+	border:1px solid #ddd;
+	display:none;
+	height:1220px;
+	background-color:#F6F6F6;
+}
+#two>div{
+	margin-top:30px;
+	float:left;
+	margin-left:20px;
+}
+#two>div>button{
+	padding:5px 10px;
+	margin-top:10px;
+}
+#three{
+	float:left;
+	width:800px;
+	height:1220px;
+	margin-top:30px;
+	border:1px solid #ddd;
+	display:none;
+	background-color:#F6F6F6;
+}
+#three>div{
+	margin-top:30px;
+	float:left;
+	margin-left:20px;
+}
+#three>div>button{
+	padding:5px 10px;
+	margin-top:10px;
+}
