@@ -2,9 +2,9 @@ $(function(){
 	nav.init();
 	slider.init();
 });
-imgs=[{"i":0,"img":"../img/w1_03.jpg"},
-	 {"i":1,"img":"../img/w2_03.jpg"},
-	 {"i":2,"img":"../img/w3_03.jpg"}];
+imgs=[{"i":0,"img":"./img/w1_03.jpg"},
+	 {"i":1,"img":"./img/w2_03.jpg"},
+	 {"i":2,"img":"./img/w3_03.jpg"}];
 nav={
 	init:function(){
 		$('#header .search').click(function(e){
